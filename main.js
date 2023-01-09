@@ -161,6 +161,11 @@ class StarRating {
 
 }
 
+if (localStorage.length <= 0) {
+    localStorage.setItem("V"+today, 1)
+}
+
+
 avarageSoccer = 0
 for (let i = 0; i < localStorage.length; i++){
     avarageSoccer += Number(localStorage.getItem(localStorage.key(i)))
