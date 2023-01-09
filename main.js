@@ -1,3 +1,5 @@
+window.localStorage.removeItem('to_do_tasks')
+
 var objToday = new Date(),
 	weekday = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'),
 	dayOfWeek = weekday[objToday.getDay()],
