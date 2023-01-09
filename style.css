@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --partial-rating-width: 0;
+}
+
+.rating {
+    margin: 5px;
+}
+
+
+.button-rating {
+    padding: 3px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-rating i {
+    position: relative;
+    display: inline-block;
+    pointer-events: none;
+    color: #bbb;
+    font-size: 18px;
+
+}
+
+.button-rating.star i {
+    color: #f2b600;
+
+}
+
+.button-rating.partial-star i::after {
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--partial-rating-width);
+    color: #f2b600;
+    font-family: FontAwesome;
+    overflow: hidden;
+    content: "\f005";
+    font-size: 18px;
+
+}
+
+form {
+    margin-top: 30px;
+
+}
+
+
+form input {
+    width: 30px;
+}
+
+
+img {
+height: 40%;
+width: 40%;
+;}
+
+
+
+
+
+
+
+
+
+
+
+
